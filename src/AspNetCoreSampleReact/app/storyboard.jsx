@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import About from './about';
 import Contact from './contact';
+import CommentBox from './commentbox';
 
 class StoryBoard extends React.Component {
 
@@ -20,11 +21,7 @@ class StoryBoard extends React.Component {
         var view = this.getView(location);
         return (
             <div>
-
-                Current View: {view} <br/>
-
-                {view === 'contact' ? <Contact/> : (view === 'about' ? <About /> : 'Welcome to StoryBoard powered by React!!')}
-
+                {view === 'contact' ? <Contact/> : (view === 'about' ? <About /> : <div><CommentBox /></div>)}
             </div>
         );
     }

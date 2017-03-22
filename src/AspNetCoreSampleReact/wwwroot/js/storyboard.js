@@ -64,185 +64,114 @@ window["storyboard"] =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/* unknown exports provided */
+/* exports used: default */
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
 /***/ (function(module, exports) {
 
-(function() { module.exports = window["React"]; }());
+eval("(function() { module.exports = window[\"React\"]; }());//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9leHRlcm5hbCBcIlJlYWN0XCI/OWRlOSJdLCJzb3VyY2VzQ29udGVudCI6WyIoZnVuY3Rpb24oKSB7IG1vZHVsZS5leHBvcnRzID0gd2luZG93W1wiUmVhY3RcIl07IH0oKSk7XG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gZXh0ZXJuYWwgXCJSZWFjdFwiXG4vLyBtb2R1bGUgaWQgPSAwXG4vLyBtb2R1bGUgY2h1bmtzID0gMCJdLCJtYXBwaW5ncyI6IkFBQUEiLCJzb3VyY2VSb290IjoiIn0=");
 
 /***/ }),
 /* 1 */
+/* exports provided: default */
+/* exports used: default */
+/*!****************************!*\
+  !*** ./app/storyboard.jsx ***!
+  \****************************/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact__ = __webpack_require__(4);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var StoryBoard = function (_React$Component) {
-    _inherits(StoryBoard, _React$Component);
-
-    function StoryBoard() {
-        _classCallCheck(this, StoryBoard);
-
-        return _possibleConstructorReturn(this, (StoryBoard.__proto__ || Object.getPrototypeOf(StoryBoard)).apply(this, arguments));
-    }
-
-    _createClass(StoryBoard, [{
-        key: 'getView',
-        value: function getView(location) {
-            if (location.indexOf('/Contact') > 0) {
-                return 'contact';
-            } else if (location.indexOf('/About') > 0) {
-                return 'about';
-            }
-
-            return 'index';
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var location = window.location.href;
-            var view = this.getView(location);
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                null,
-                'Current View: ',
-                view,
-                ' ',
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
-                view === 'contact' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__contact__["a" /* default */], null) : view === 'about' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__about__["a" /* default */], null) : 'Welcome to StoryBoard powered by React!!'
-            );
-        }
-    }]);
-
-    return StoryBoard;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["a"] = StoryBoard;
+eval("/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about__ = __webpack_require__(/*! ./about */ 3);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact__ = __webpack_require__(/*! ./contact */ 7);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__commentbox__ = __webpack_require__(/*! ./commentbox */ 5);\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n\n\n\n\n\nvar StoryBoard = function (_React$Component) {\n    _inherits(StoryBoard, _React$Component);\n\n    function StoryBoard() {\n        _classCallCheck(this, StoryBoard);\n\n        return _possibleConstructorReturn(this, (StoryBoard.__proto__ || Object.getPrototypeOf(StoryBoard)).apply(this, arguments));\n    }\n\n    _createClass(StoryBoard, [{\n        key: 'getView',\n        value: function getView(location) {\n            if (location.indexOf('/Contact') > 0) {\n                return 'contact';\n            } else if (location.indexOf('/About') > 0) {\n                return 'about';\n            }\n\n            return 'index';\n        }\n    }, {\n        key: 'render',\n        value: function render() {\n            var location = window.location.href;\n            var view = this.getView(location);\n            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                'div',\n                null,\n                view === 'contact' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__contact__[\"a\" /* default */], null) : view === 'about' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__about__[\"a\" /* default */], null) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                    'div',\n                    null,\n                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__commentbox__[\"a\" /* default */], null)\n                )\n            );\n        }\n    }]);\n\n    return StoryBoard;\n}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);\n\n/* harmony default export */ __webpack_exports__[\"a\"] = StoryBoard;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9hcHAvc3Rvcnlib2FyZC5qc3g/YjA3NyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgQWJvdXQgZnJvbSAnLi9hYm91dCc7XHJcbmltcG9ydCBDb250YWN0IGZyb20gJy4vY29udGFjdCc7XHJcbmltcG9ydCBDb21tZW50Qm94IGZyb20gJy4vY29tbWVudGJveCc7XHJcblxyXG5jbGFzcyBTdG9yeUJvYXJkIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuXHJcbiAgICBnZXRWaWV3KGxvY2F0aW9uKSB7XHJcbiAgICAgICAgaWYgKGxvY2F0aW9uLmluZGV4T2YoJy9Db250YWN0JykgPiAwKSB7XHJcbiAgICAgICAgICAgIHJldHVybiAnY29udGFjdCc7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGVsc2UgaWYgKGxvY2F0aW9uLmluZGV4T2YoJy9BYm91dCcpID4gMCkge1xyXG4gICAgICAgICAgICByZXR1cm4gJ2Fib3V0JztcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIHJldHVybiAnaW5kZXgnO1xyXG4gICAgfVxyXG5cclxuICAgIHJlbmRlciAoKSB7XHJcbiAgICAgICAgdmFyIGxvY2F0aW9uID0gd2luZG93LmxvY2F0aW9uLmhyZWY7XHJcbiAgICAgICAgdmFyIHZpZXcgPSB0aGlzLmdldFZpZXcobG9jYXRpb24pO1xyXG4gICAgICAgIHJldHVybiAoXHJcbiAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgICB7dmlldyA9PT0gJ2NvbnRhY3QnID8gPENvbnRhY3QvPiA6ICh2aWV3ID09PSAnYWJvdXQnID8gPEFib3V0IC8+IDogPGRpdj48Q29tbWVudEJveCAvPjwvZGl2Pil9XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICk7XHJcbiAgICB9XHJcbn1cclxuXHJcbiAgICBleHBvcnQgZGVmYXVsdCBTdG9yeUJvYXJkO1xuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyBhcHAvc3Rvcnlib2FyZC5qc3giXSwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOzs7Ozs7Ozs7OztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURBO0FBSUE7Ozs7QUFyQkE7QUFDQTtBQXVCQTs7Ozs7Iiwic291cmNlUm9vdCI6IiJ9");
 
 /***/ }),
 /* 2 */
+/* unknown exports provided */
+/* exports used: default */
+/*!***************************!*\
+  !*** external "ReactDOM" ***!
+  \***************************/
 /***/ (function(module, exports) {
 
-(function() { module.exports = window["ReactDOM"]; }());
+eval("(function() { module.exports = window[\"ReactDOM\"]; }());//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMi5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9leHRlcm5hbCBcIlJlYWN0RE9NXCI/NGFiNCJdLCJzb3VyY2VzQ29udGVudCI6WyIoZnVuY3Rpb24oKSB7IG1vZHVsZS5leHBvcnRzID0gd2luZG93W1wiUmVhY3RET01cIl07IH0oKSk7XG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gZXh0ZXJuYWwgXCJSZWFjdERPTVwiXG4vLyBtb2R1bGUgaWQgPSAyXG4vLyBtb2R1bGUgY2h1bmtzID0gMCJdLCJtYXBwaW5ncyI6IkFBQUEiLCJzb3VyY2VSb290IjoiIn0=");
 
 /***/ }),
 /* 3 */
+/* exports provided: default */
+/* exports used: default */
+/*!***********************!*\
+  !*** ./app/about.jsx ***!
+  \***********************/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-var About = function (_React$Component) {
-    _inherits(About, _React$Component);
-
-    function About() {
-        _classCallCheck(this, About);
-
-        return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
-    }
-
-    _createClass(About, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'h3',
-                null,
-                'About View !!'
-            );
-        }
-    }]);
-
-    return About;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["a"] = About;
+eval("/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n\n\nvar About = function (_React$Component) {\n    _inherits(About, _React$Component);\n\n    function About() {\n        _classCallCheck(this, About);\n\n        return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));\n    }\n\n    _createClass(About, [{\n        key: 'render',\n        value: function render() {\n            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                'h3',\n                null,\n                'About View !!'\n            );\n        }\n    }]);\n\n    return About;\n}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);\n\n/* harmony default export */ __webpack_exports__[\"a\"] = About;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9hcHAvYWJvdXQuanN4PzY4ZGIiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcclxuXHJcbmNsYXNzIEFib3V0IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuICAgIHJlbmRlciAoKSB7XHJcbiAgICAgICAgcmV0dXJuIChcclxuICAgICAgICAgICAgPGgzPkFib3V0IFZpZXcgISE8L2gzPlxyXG4gICAgICAgICk7XHJcbiAgICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IEFib3V0O1xuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyBhcHAvYWJvdXQuanN4Il0sIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUFBO0FBQ0E7QUFDQTs7Ozs7Ozs7Ozs7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFFQTs7OztBQUxBO0FBQ0E7QUFPQTs7Iiwic291cmNlUm9vdCI6IiJ9");
 
 /***/ }),
 /* 4 */
+/* exports provided: default */
+/* exports used: default */
+/*!*************************!*\
+  !*** ./app/comment.jsx ***!
+  \*************************/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-var Contact = function (_React$Component) {
-    _inherits(Contact, _React$Component);
-
-    function Contact() {
-        _classCallCheck(this, Contact);
-
-        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
-    }
-
-    _createClass(Contact, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'h3',
-                null,
-                'Contact View !!'
-            );
-        }
-    }]);
-
-    return Contact;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["a"] = Contact;
+eval("/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n\n\nvar Comment = function (_React$Component) {\n    _inherits(Comment, _React$Component);\n\n    function Comment() {\n        _classCallCheck(this, Comment);\n\n        return _possibleConstructorReturn(this, (Comment.__proto__ || Object.getPrototypeOf(Comment)).apply(this, arguments));\n    }\n\n    _createClass(Comment, [{\n        key: \"render\",\n        value: function render() {\n            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                \"div\",\n                { className: \"comment\" },\n                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                    \"p\",\n                    { className: \"comment-header\" },\n                    this.props.author\n                ),\n                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                    \"p\",\n                    { className: \"comment-body\" },\n                    this.props.body\n                ),\n                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                    \"div\",\n                    { className: \"comment-footer\" },\n                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                        \"a\",\n                        { href: \"#\", className: \"comment-footer-delete\" },\n                        \"Delete Comment\"\n                    )\n                )\n            );\n        }\n    }]);\n\n    return Comment;\n}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);\n\n/* harmony default export */ __webpack_exports__[\"a\"] = Comment;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9hcHAvY29tbWVudC5qc3g/NzM3NCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5cclxuY2xhc3MgQ29tbWVudCBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XHJcbiAgICByZW5kZXIoKSB7XHJcbiAgICAgICAgcmV0dXJuIChcclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb21tZW50XCI+XHJcbiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJjb21tZW50LWhlYWRlclwiPnt0aGlzLnByb3BzLmF1dGhvcn08L3A+XHJcbiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJjb21tZW50LWJvZHlcIj5cclxuICAgICAgICAgICAgICAgICAgICB7dGhpcy5wcm9wcy5ib2R5fVxyXG4gICAgICAgICAgICAgICAgPC9wPlxyXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb21tZW50LWZvb3RlclwiPlxyXG4gICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9XCIjXCIgY2xhc3NOYW1lPVwiY29tbWVudC1mb290ZXItZGVsZXRlXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIERlbGV0ZSBDb21tZW50XHJcbiAgICAgICAgICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICk7XHJcbiAgICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IENvbW1lbnQ7XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIGFwcC9jb21tZW50LmpzeCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7Ozs7Ozs7Ozs7O0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUdBO0FBQUE7QUFBQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFEQTtBQUxBO0FBWUE7Ozs7QUFmQTtBQUNBO0FBaUJBOzsiLCJzb3VyY2VSb290IjoiIn0=");
 
 /***/ }),
 /* 5 */
+/* exports provided: default */
+/* exports used: default */
+/*!****************************!*\
+  !*** ./app/commentbox.jsx ***!
+  \****************************/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__storyboard__ = __webpack_require__(1);
+eval("/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__comment__ = __webpack_require__(/*! ./comment */ 4);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__commentform__ = __webpack_require__(/*! ./commentform */ 6);\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n\n\n\n\nvar CommentBox = function (_React$Component) {\n    _inherits(CommentBox, _React$Component);\n\n    function CommentBox() {\n        _classCallCheck(this, CommentBox);\n\n        var _this = _possibleConstructorReturn(this, (CommentBox.__proto__ || Object.getPrototypeOf(CommentBox)).call(this));\n\n        _this.state = {\n            showComments: false,\n            comments: []\n        };\n        return _this;\n    }\n\n    _createClass(CommentBox, [{\n        key: '_getComments',\n        value: function _getComments() {\n            return this.state.comments.map(function (comment) {\n                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__comment__[\"a\" /* default */], { author: comment.author, body: comment.body, key: comment.id });\n            });\n        }\n    }, {\n        key: '_getCommentsTitle',\n        value: function _getCommentsTitle(commentCount) {\n            if (commentCount === 0) {\n                return \"No comments yet\";\n            } else if (commentCount === 1) {\n                return \"1 comment\";\n            } else {\n                return commentCount + ' comments';\n            }\n        }\n    }, {\n        key: '_handleClick',\n        value: function _handleClick() {\n            this.setState({\n                showComments: !this.state.showComments\n            });\n        }\n    }, {\n        key: '_addComment',\n        value: function _addComment(author, body) {\n            var comment = {\n                id: this.state.comments.length + 1,\n                author: author,\n                body: body\n            };\n\n            this.setState({ comments: this.state.comments.concat([comment]) });\n        }\n    }, {\n        key: '_fetchComments',\n        value: function _fetchComments() {\n            var _this2 = this;\n\n            jQuery.ajax({\n                method: \"GET\",\n                url: \"/api/comments\",\n                success: function success(comments) {\n                    _this2.setState({ comments: comments });\n                }\n            });\n        }\n    }, {\n        key: 'componentWillMount',\n        value: function componentWillMount() {\n            this._fetchComments();\n        }\n    }, {\n        key: 'componentDidMount',\n        value: function componentDidMount() {\n            var _this3 = this;\n\n            this._timer = setInterval(function () {\n                return _this3._fetchComments();\n            }, 5000);\n        }\n    }, {\n        key: 'componentWillUnmount',\n        value: function componentWillUnmount() {\n            clearInterval(this._timer);\n        }\n    }, {\n        key: 'render',\n        value: function render() {\n            var comments = this._getComments();\n            var commentNodes = void 0;\n            var buttonText = 'Show Comments';\n            if (this.state.showComments) {\n                buttonText = 'Hide Comments';\n                commentNodes = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                    'div',\n                    { className: 'comment-list' },\n                    comments\n                );\n            }\n            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                'div',\n                { className: 'comment-box' },\n                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__commentform__[\"a\" /* default */], { addComment: this._addComment.bind(this) }),\n                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                    'h3',\n                    null,\n                    'Comments'\n                ),\n                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                    'h4',\n                    { className: 'comment-count' },\n                    this._getCommentsTitle(comments.length),\n                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                        'button',\n                        { className: 'comment-button', onClick: this._handleClick.bind(this) },\n                        buttonText\n                    )\n                ),\n                commentNodes\n            );\n        }\n    }]);\n\n    return CommentBox;\n}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);\n\n/* harmony default export */ __webpack_exports__[\"a\"] = CommentBox;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9hcHAvY29tbWVudGJveC5qc3g/MDg5ZCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgQ29tbWVudCBmcm9tICcuL2NvbW1lbnQnO1xyXG5pbXBvcnQgQ29tbWVudEZvcm0gZnJvbSAnLi9jb21tZW50Zm9ybSc7XHJcblxyXG5jbGFzcyBDb21tZW50Qm94IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuXHJcbiAgICBjb25zdHJ1Y3RvcigpIHtcclxuICAgICAgICBzdXBlcigpO1xyXG5cclxuICAgICAgICB0aGlzLnN0YXRlID0ge1xyXG4gICAgICAgICAgICBzaG93Q29tbWVudHM6IGZhbHNlLFxyXG4gICAgICAgICAgICBjb21tZW50cyA6IFtdXHJcbiAgICAgICAgfTtcclxuICAgIH1cclxuXHJcbiAgICBfZ2V0Q29tbWVudHMoKSB7XHJcbiAgICAgICAgcmV0dXJuIHRoaXMuc3RhdGUuY29tbWVudHMubWFwKChjb21tZW50KSA9PiB7XHJcbiAgICAgICAgICAgIHJldHVybiAoXHJcbiAgICAgICAgICAgICAgICA8Q29tbWVudCBhdXRob3I9e2NvbW1lbnQuYXV0aG9yfSBib2R5PXtjb21tZW50LmJvZHl9IGtleT17Y29tbWVudC5pZH0gLz5cclxuICAgICAgICAgICAgKTtcclxuICAgICAgICB9KTtcclxuICAgIH1cclxuXHJcbiAgICBfZ2V0Q29tbWVudHNUaXRsZShjb21tZW50Q291bnQpIHtcclxuICAgICAgICBpZiAoY29tbWVudENvdW50ID09PSAwKSB7XHJcbiAgICAgICAgICAgIHJldHVybiBcIk5vIGNvbW1lbnRzIHlldFwiO1xyXG4gICAgICAgIH1cclxuICAgICAgICBlbHNlIGlmIChjb21tZW50Q291bnQgPT09IDEpIHtcclxuICAgICAgICAgICAgcmV0dXJuIFwiMSBjb21tZW50XCI7XHJcbiAgICAgICAgfSBlbHNlIHtcclxuICAgICAgICAgICAgcmV0dXJuIGAke2NvbW1lbnRDb3VudH0gY29tbWVudHNgO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbiAgICBfaGFuZGxlQ2xpY2soKSB7XHJcbiAgICAgICAgdGhpcy5zZXRTdGF0ZSh7XHJcbiAgICAgICAgICAgIHNob3dDb21tZW50czogIXRoaXMuc3RhdGUuc2hvd0NvbW1lbnRzXHJcbiAgICAgICAgfSk7XHJcbiAgICB9XHJcblxyXG4gICAgX2FkZENvbW1lbnQoYXV0aG9yLCBib2R5KSB7XHJcbiAgICAgICAgY29uc3QgY29tbWVudCA9IHtcclxuICAgICAgICAgICAgaWQ6IHRoaXMuc3RhdGUuY29tbWVudHMubGVuZ3RoICsgMSxcclxuICAgICAgICAgICAgYXV0aG9yLFxyXG4gICAgICAgICAgICBib2R5XHJcbiAgICAgICAgfTtcclxuXHJcbiAgICAgICAgdGhpcy5zZXRTdGF0ZSh7IGNvbW1lbnRzOiB0aGlzLnN0YXRlLmNvbW1lbnRzLmNvbmNhdChbY29tbWVudF0pIH0pO1xyXG4gICAgfVxyXG5cclxuICAgIF9mZXRjaENvbW1lbnRzKCkge1xyXG4gICAgICAgIGpRdWVyeS5hamF4KHtcclxuICAgICAgICAgICAgbWV0aG9kOiBcIkdFVFwiLFxyXG4gICAgICAgICAgICB1cmw6IFwiL2FwaS9jb21tZW50c1wiLFxyXG4gICAgICAgICAgICBzdWNjZXNzOiAoY29tbWVudHMpID0+IHtcclxuICAgICAgICAgICAgICAgIHRoaXMuc2V0U3RhdGUoeyBjb21tZW50cyB9KTtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH0pO1xyXG4gICAgfVxyXG5cclxuICAgIGNvbXBvbmVudFdpbGxNb3VudCgpIHtcclxuICAgICAgICB0aGlzLl9mZXRjaENvbW1lbnRzKCk7XHJcbiAgICB9XHJcblxyXG4gICAgY29tcG9uZW50RGlkTW91bnQoKSB7XHJcbiAgICAgICAgdGhpcy5fdGltZXIgPSBzZXRJbnRlcnZhbCgoKT0+IHRoaXMuX2ZldGNoQ29tbWVudHMoKSwgNTAwMCk7XHJcbiAgICB9XHJcblxyXG4gICAgY29tcG9uZW50V2lsbFVubW91bnQoKSB7XHJcbiAgICAgICAgY2xlYXJJbnRlcnZhbCh0aGlzLl90aW1lcik7XHJcbiAgICB9XHJcblxyXG4gICAgcmVuZGVyICgpIHtcclxuICAgICAgICBjb25zdCBjb21tZW50cyA9IHRoaXMuX2dldENvbW1lbnRzKCk7XHJcbiAgICAgICAgbGV0IGNvbW1lbnROb2RlcztcclxuICAgICAgICBsZXQgYnV0dG9uVGV4dCA9ICdTaG93IENvbW1lbnRzJztcclxuICAgICAgICBpZiAodGhpcy5zdGF0ZS5zaG93Q29tbWVudHMpIHtcclxuICAgICAgICAgICAgYnV0dG9uVGV4dCA9ICdIaWRlIENvbW1lbnRzJztcclxuICAgICAgICAgICAgY29tbWVudE5vZGVzID0gPGRpdiBjbGFzc05hbWU9XCJjb21tZW50LWxpc3RcIj57Y29tbWVudHN9PC9kaXY+O1xyXG4gICAgICAgIH1cclxuICAgICAgICByZXR1cm4gKFxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbW1lbnQtYm94XCI+XHJcbiAgICAgICAgICAgICAgICA8Q29tbWVudEZvcm0gYWRkQ29tbWVudD17dGhpcy5fYWRkQ29tbWVudC5iaW5kKHRoaXMpfS8+XHJcbiAgICAgICAgICAgICAgICA8aDM+Q29tbWVudHM8L2gzPlxyXG4gICAgICAgICAgICAgICAgPGg0IGNsYXNzTmFtZT1cImNvbW1lbnQtY291bnRcIj5cclxuICAgICAgICAgICAgICAgICAgICB7dGhpcy5fZ2V0Q29tbWVudHNUaXRsZShjb21tZW50cy5sZW5ndGgpfVxyXG4gICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiY29tbWVudC1idXR0b25cIiBvbkNsaWNrPXt0aGlzLl9oYW5kbGVDbGljay5iaW5kKHRoaXMpfT57YnV0dG9uVGV4dH08L2J1dHRvbj5cclxuICAgICAgICAgICAgICAgIDwvaDQ+ICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAge2NvbW1lbnROb2Rlc31cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgKTtcclxuICAgIH1cclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgQ29tbWVudEJveDtcblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gYXBwL2NvbW1lbnRib3guanN4Il0sIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7OztBQUVBO0FBQUE7QUFDQTtBQURBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFGQTtBQUhBO0FBT0E7QUFDQTs7O0FBQ0E7QUFDQTtBQUNBO0FBR0E7QUFDQTs7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOzs7QUFFQTtBQUNBO0FBQ0E7QUFEQTtBQUdBOzs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBSEE7QUFDQTtBQUtBO0FBQ0E7OztBQUVBO0FBQUE7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUxBO0FBT0E7OztBQUVBO0FBQ0E7QUFDQTs7O0FBRUE7QUFBQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7OztBQUVBO0FBQ0E7QUFDQTs7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFBQTtBQUFBO0FBQ0E7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBRkE7QUFJQTtBQVBBO0FBVUE7Ozs7QUF2RkE7QUFDQTtBQXlGQTs7OzsiLCJzb3VyY2VSb290IjoiIn0=");
 
+/***/ }),
+/* 6 */
+/* exports provided: default */
+/* exports used: default */
+/*!*****************************!*\
+  !*** ./app/commentform.jsx ***!
+  \*****************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+eval("/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n\n\nvar CommentForm = function (_React$Component) {\n    _inherits(CommentForm, _React$Component);\n\n    function CommentForm() {\n        _classCallCheck(this, CommentForm);\n\n        return _possibleConstructorReturn(this, (CommentForm.__proto__ || Object.getPrototypeOf(CommentForm)).apply(this, arguments));\n    }\n\n    _createClass(CommentForm, [{\n        key: '_handleSubmit',\n        value: function _handleSubmit(event) {\n            event.preventDefault();\n            var author = this._author;\n            var body = this._body;\n            this.props.addComment(author.value, body.value);\n            this._author.value = '';\n            this._body.value = '';\n        }\n    }, {\n        key: 'render',\n        value: function render() {\n            var _this2 = this;\n\n            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                'form',\n                { className: 'comment-form', onSubmit: this._handleSubmit.bind(this) },\n                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                    'label',\n                    null,\n                    'New comment'\n                ),\n                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                    'div',\n                    { className: 'comment-form-fields' },\n                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { placeholder: 'Name:', ref: function ref(input) {\n                            return _this2._author = input;\n                        } }),\n                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('textarea', { placeholder: 'Comment:', ref: function ref(textarea) {\n                            return _this2._body = textarea;\n                        } })\n                ),\n                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                    'div',\n                    { className: 'comment-form-actions' },\n                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                        'button',\n                        { type: 'submit' },\n                        'Post Comment'\n                    )\n                )\n            );\n        }\n    }]);\n\n    return CommentForm;\n}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);\n\n/* harmony default export */ __webpack_exports__[\"a\"] = CommentForm;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNi5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9hcHAvY29tbWVudGZvcm0uanN4Pzk0ZmUiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcclxuXHJcbmNsYXNzIENvbW1lbnRGb3JtIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuXHJcbiAgICBfaGFuZGxlU3VibWl0KGV2ZW50KSB7XHJcbiAgICAgICAgZXZlbnQucHJldmVudERlZmF1bHQoKTtcclxuICAgICAgICBsZXQgYXV0aG9yID0gdGhpcy5fYXV0aG9yO1xyXG4gICAgICAgIGxldCBib2R5ID0gdGhpcy5fYm9keTtcclxuICAgICAgICB0aGlzLnByb3BzLmFkZENvbW1lbnQoYXV0aG9yLnZhbHVlLCBib2R5LnZhbHVlKTtcclxuICAgICAgICB0aGlzLl9hdXRob3IudmFsdWUgPSAnJztcclxuICAgICAgICB0aGlzLl9ib2R5LnZhbHVlID0gJyc7XHJcbiAgICB9XHJcblxyXG4gICAgcmVuZGVyKCkge1xyXG4gICAgICAgIHJldHVybiAoXHJcbiAgICAgICAgICAgIDxmb3JtIGNsYXNzTmFtZT1cImNvbW1lbnQtZm9ybVwiIG9uU3VibWl0PXt0aGlzLl9oYW5kbGVTdWJtaXQuYmluZCh0aGlzKX0+XHJcbiAgICAgICAgICAgICAgICA8bGFiZWw+TmV3IGNvbW1lbnQ8L2xhYmVsPlxyXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb21tZW50LWZvcm0tZmllbGRzXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgPGlucHV0IHBsYWNlaG9sZGVyPVwiTmFtZTpcIiByZWY9eyhpbnB1dCk9PnRoaXMuX2F1dGhvciA9IGlucHV0fS8+XHJcbiAgICAgICAgICAgICAgICAgICAgPHRleHRhcmVhIHBsYWNlaG9sZGVyPVwiQ29tbWVudDpcIiByZWY9eyh0ZXh0YXJlYSk9PnRoaXMuX2JvZHkgPSB0ZXh0YXJlYX0+PC90ZXh0YXJlYT5cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb21tZW50LWZvcm0tYWN0aW9uc1wiPlxyXG4gICAgICAgICAgICAgICAgICAgIDxidXR0b24gdHlwZT1cInN1Ym1pdFwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICBQb3N0IENvbW1lbnRcclxuICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj5cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8L2Zvcm0+XHJcbiAgICAgICAgKTtcclxuICAgIH1cclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgQ29tbWVudEZvcm07XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIGFwcC9jb21tZW50Zm9ybS5qc3giXSwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQUE7QUFDQTtBQUNBOzs7Ozs7Ozs7OztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7OztBQUVBO0FBQUE7QUFDQTtBQUFBO0FBQ0E7QUFBQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUFBO0FBQUE7QUFDQTtBQUFBO0FBQUE7QUFDQTtBQUFBO0FBQUE7QUFGQTtBQUlBO0FBQUE7QUFBQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFEQTtBQU5BO0FBYUE7Ozs7QUExQkE7QUFDQTtBQTRCQTs7Iiwic291cmNlUm9vdCI6IiJ9");
 
+/***/ }),
+/* 7 */
+/* exports provided: default */
+/* exports used: default */
+/*!*************************!*\
+  !*** ./app/contact.jsx ***!
+  \*************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__storyboard__["a" /* default */], null), document.getElementById('container'));
+"use strict";
+eval("/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n\n\nvar Contact = function (_React$Component) {\n    _inherits(Contact, _React$Component);\n\n    function Contact() {\n        _classCallCheck(this, Contact);\n\n        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));\n    }\n\n    _createClass(Contact, [{\n        key: 'render',\n        value: function render() {\n            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(\n                'h3',\n                null,\n                'Contact View !!'\n            );\n        }\n    }]);\n\n    return Contact;\n}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);\n\n/* harmony default export */ __webpack_exports__[\"a\"] = Contact;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9hcHAvY29udGFjdC5qc3g/MzFkMCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5cclxuY2xhc3MgQ29udGFjdCBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XHJcbiAgICByZW5kZXIgKCkge1xyXG4gICAgICAgIHJldHVybiAoXHJcbiAgICAgICAgICAgIDxoMz5Db250YWN0IFZpZXcgISE8L2gzPlxyXG4gICAgICAgICk7XHJcbiAgICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IENvbnRhY3Q7XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIGFwcC9jb250YWN0LmpzeCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7Ozs7Ozs7Ozs7O0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBRUE7Ozs7QUFMQTtBQUNBO0FBT0E7OyIsInNvdXJjZVJvb3QiOiIifQ==");
+
+/***/ }),
+/* 8 */
+/* unknown exports provided */
+/* all exports used */
+/*!*********************!*\
+  !*** ./app/app.jsx ***!
+  \*********************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("Object.defineProperty(__webpack_exports__, \"__esModule\", { value: true });\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(/*! react-dom */ 2);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__storyboard__ = __webpack_require__(/*! ./storyboard */ 1);\n\n\n\n\n__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__storyboard__[\"a\" /* default */], null), document.getElementById('container'));//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiOC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9hcHAvYXBwLmpzeD9iYjQ5Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCBSZWFjdERPTSBmcm9tICdyZWFjdC1kb20nO1xyXG5pbXBvcnQgU3RvcnlCb2FyZCBmcm9tICcuL3N0b3J5Ym9hcmQnO1xyXG5cclxuUmVhY3RET00ucmVuZGVyKDxTdG9yeUJvYXJkLz4sIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdjb250YWluZXInKSk7XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIGFwcC9hcHAuanN4Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9");
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=storyboard.js.map

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using AspNetCoreSampleReact.Model;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -35,9 +36,12 @@ namespace AspNetCoreSampleReact.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]Comment comment)
+        public void Post(Comment comment)
         {
             var comments = JsonConvert.DeserializeObject<List<Comment>>(ReadCommentsJson());
+
+            comment.Id = comments.Count + 1;
+
             comments.Add(comment);
             SaveCommentsJson(JsonConvert.SerializeObject(comments));
         }
@@ -49,10 +53,14 @@ namespace AspNetCoreSampleReact.Controllers
         //}
 
         // DELETE api/values/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+            var comments = JsonConvert.DeserializeObject<List<Comment>>(ReadCommentsJson());
+            var comment = comments.SingleOrDefault(c => c.Id == id);
+            comments.Remove(comment);
+            SaveCommentsJson(JsonConvert.SerializeObject(comments));
+        }
 
         private string ReadCommentsJson()
         {
